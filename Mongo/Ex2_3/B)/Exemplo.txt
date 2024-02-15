@@ -1,0 +1,72 @@
+mydb> db.restaurantes.find(
+... )
+[
+  {
+    _id: ObjectId("652accf28f1927176bda43b4"),
+    name: 'Restaurante Exemplo',
+    cuisine: 'Atualizada',
+    address: { street: 'Rua Exemplo', city: 'Cidade Exemplo' }
+  },
+  {
+    _id: ObjectId("652afbfdd1ee7a02bf0d62a8"),
+    nome: 'Restaurante Exemplo',
+    cuisine: 'Atualizada',
+    address: { street: 'Rua Exemplo', city: 'Cidade Exemplo' }
+  },
+  {
+    _id: ObjectId("652afd5be625043ae703ed27"),
+    nome: 'Vene pão',
+    cuisine: 'Variada',
+    address: { street: 'Rua so autocarro bar', city: 'Cidade Exemplo' }
+  },
+  {
+    _id: ObjectId("652afdf1d860a50ec815f87d"),
+    nome: 'mar doce',
+    cuisine: 'mar',
+    address: { street: 'Barra', city: 'Costa nova' }
+  },
+  {
+    _id: ObjectId("652afe018de85d0b027dae06"),
+    nome: 'mar doce',
+    cuisine: 'mar',
+    address: { street: 'Barra', city: 'Costa nova' }
+  },
+  {
+    _id: ObjectId("652afe4d8013db5cbe6e6a07"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  },
+  {
+    _id: ObjectId("652afe9643e22d68c42cd0b5"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  },
+  {
+    _id: ObjectId("652c0b22c09b380c0edaa17c"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  },
+  {
+    _id: ObjectId("652c0b5503d48a569ba6d62b"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  },
+  {
+    _id: ObjectId("652d156bb649db79b90dc551"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  },
+  {
+    _id: ObjectId("652d1720e9f0ba0b17fa9619"),
+    nome: 'mar',
+    cuisine: 'Variada',
+    address: { street: 'Costa nova', city: 'Cidade torre a vista' }
+  }
+]
+mydb> 
+

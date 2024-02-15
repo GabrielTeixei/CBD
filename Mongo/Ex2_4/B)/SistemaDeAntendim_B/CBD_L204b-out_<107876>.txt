@@ -1,0 +1,85 @@
+ {
+    _id: ObjectId("652d28331e6d3232f4a63951"),
+    username: 'Gabriel',
+    product: 'Maçã',
+    quantity: 10,
+    timestamp: Long("1697458227931")
+  },
+  {
+    _id: ObjectId("652d28331e6d3232f4a63952"),
+    username: 'Gabriel',
+    product: 'Pera',
+    quantity: 15,
+    timestamp: Long("1697458227945")
+  },
+  {
+    _id: ObjectId("652d28331e6d3232f4a63953"),
+    username: 'Ana',
+    product: 'Banana',
+    quantity: 8,
+    timestamp: Long("1697458227947")
+  },
+  {
+    _id: ObjectId("652d28331e6d3232f4a63954"),
+    username: 'Bia',
+    product: 'Pessego',
+    quantity: 20,
+    timestamp: Long("1697458227949")
+  },
+  {
+    _id: ObjectId("652d28a28250ad2c3d085880"),
+    username: 'Alex',
+    product: 'H20',
+    quantity: 15,
+    timestamp: Long("1697458338679")
+  },
+  {
+    _id: ObjectId("652d28a28250ad2c3d085881"),
+    username: 'Tomas',
+    product: 'TOmato',
+    quantity: 8,
+    timestamp: Long("1697458338694")
+  },
+  {
+    _id: ObjectId("652d28a28250ad2c3d085882"),
+    username: 'Eva',
+    product: 'gomas',
+    quantity: 20,
+    timestamp: Long("1697458338696")
+  },
+  {
+    _id: ObjectId("652d29003aa4344afccfbea0"),
+    username: 'Alex',
+    product: 'H20',
+    quantity: 15,
+    timestamp: Long("1697458432910")
+  },
+  {
+    _id: ObjectId("652d29003aa4344afccfbea1"),
+    username: 'Tomas',
+    product: 'TOmato',
+    quantity: 8,
+    timestamp: Long("1697458432923")
+  },
+  {
+    _id: ObjectId("652d29003aa4344afccfbea2"),
+    username: 'Eva',
+    product: 'gomas',
+    quantity: 20,
+    timestamp: Long("1697458432926")
+  },
+  {
+    _id: ObjectId("652d2924ca0a50630a59dc5f"),
+    username: 'Alex',
+    product: 'H20',
+    quantity: 15,
+    timestamp: Long("1697458468372")
+  },
+  {
+    _id: ObjectId("652d2924ca0a50630a59dc60"),
+    username: 'Tomas',
+    product: 'TOmato',
+    quantity: 8,
+    timestamp: Long("1697458468386")
+  }
+]

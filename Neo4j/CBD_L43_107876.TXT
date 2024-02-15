@@ -1,0 +1,51 @@
+// NMEC: 107876
+
+# 0. Carregue o conteudo do ficheiro `/resouces/git_selection.csv`.
+LOAD CSV WITH HEADERS FROM 'file:///resources/git_selection.csv' AS row
+MERGE (u:User {username: row.svn_id, realname: row.real_name})
+MERGE (p:Project {projname: row.project_name})
+MERGE (o:Organization {orgname: replace(row.organization, " ", "")})
+MERGE (u)-[r1:WORKS_ON {role:row.role_on_project}]->(p)
+MERGE (u)-[r2:WORKS_AT]->(o)
+
+# 1. Liste a informação de cada utilizador.
+MATCH (n:User) RETURN n
+
+# 2. Liste o nome de cada utilizador.
+MATCH (n:User) RETURN n.realname
+
+# 3. Liste a informação de cada projeto, no qual tenha participado pelo menos um utilizador.
+MATCH (p:Project)<-[:WORKS_ON]-(u:User)
+RETURN p
+
+
+# 4. Liste os utilizadores e total de projetos em que cada um colabora.
+MATCH (u:User)-[:WORKS_ON]->(p:Project)
+RETURN u.username, COUNT(p) AS TotalProjects
+
+
+# 5. Liste os utilizadores e do total de projetos em que cada colabora ordenados por ordem decrescente do total.
+MATCH (u:User)-[:WORKS_ON]->(p:Project)
+RETURN u.username, COUNT(p) AS TotalProjects
+ORDER BY TotalProjects DESC
+
+
+# 6. Liste projetos e total de membros em cada projeto.
+MATCH (p:Project)<-[:WORKS_ON]-(u:User)
+RETURN p.projname, COUNT(u) AS TotalMembers
+
+# 7. Liste projetos e total de membros com a role "Committer" em cada projeto.
+MATCH (p:Project)<-[r:WORKS_ON]-(u:User)
+WHERE r.role = 'Committer'
+RETURN p.projname, COUNT(u) AS TotalCommitters
+
+# 8. Liste todos os utilizadores que participaram nos mesmo projetos do que o utilizador "atm" (id). Mostre os atributos: nome de "atm", nome utilizador 2, nome do projeto.
+
+MATCH (atm:User {username: 'atm'})-[:WORKS_ON]->(p:Project)<-[:WORKS_ON]-(u2:User)
+RETURN atm.realname, u2.realname, p.projname
+
+# 9. Liste todos os utilizadores que participaram com a role "Committer" em projetos em que o utilizador "atm" (id1) participou com a role "PMC".
+
+MATCH (atm:User {username: 'atm'})-[r1:WORKS_ON]->(p:Project)<-[r2:WORKS_ON]-(u:User)
+WHERE r1.role = 'PMC' AND r2.role = 'Committer'
+RETURN u.username

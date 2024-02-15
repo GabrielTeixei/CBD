@@ -1,0 +1,24 @@
+
+SELECT json *  FROM videos.videos ;
+
+SELECT json * FROM videos.video_gestao ;
+
+SELECT json * FROM videos.comentarios ;
+
+SELECT json * FROM videos.video_followers  ;                                                                                                                 
+
+SELECT json * FROM videos.video_eventos ;
+
+SELECT json * FROM videos.video_ratings ;
+
+SELECT json * FROM videos.videos_por_autor WHERE autor = 'Autor1';
+
+SELECT json * FROM videos.comentarios_por_usuario ;
+
+SELECT json * FROM videos.comentarios_por_video;
+
+SELECT json * FROM videos.video_rating_summary ;                                                                                                      
+
+
+
+CREATE TABLE comentarios_por_video (     video_id uuid,     comment_id text,     comment_text text,     timestamp_comment timestamp,     PRIMARY KEY (video_id, timestamp_comment) ) WITH CLUSTERING ORDER BY (timestamp_comment DESC);

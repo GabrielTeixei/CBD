@@ -1,0 +1,48 @@
+4.1.3
+############################################################
+A)
+->User  inserted sucessfully!
+ | UU ID : 1 | Name  : Bruno | Age   : 20 |
+->Efetuado com sucesso!
+ | UU ID : 1 | Name  : Bruno o melhor do mundo | Age   : 20 |
+############################################################
+B)
+
+[autor:'Artista Digital', descricao:'Tutorial de Arte Digital', nome:'Criando com Cores', selo_temporal:'2023-11-19T12:12:12.122Z', video_id:ce98ee4c-2873-41b6-b741-8ea5a46a70eb]
+->tags de um aventura
+
+[autor:'João Silva', timestamp_upload:'2023-11-20T14:15:00.000Z', video_id:217162d9-dce6-48d2-bc1c-2cbc2451d7e9, descricao:'Explorando a floresta Amazônica', nome_video:'Aventuras na Amazônia', tags:{'aventura','natureza','viagem'}]
+-> Todos os seguidores (followers) de determinado video; 
+
+[user_id:6348c35c-e979-407d-9b1a-2ce05b5b8b31]
+->Os ultimos 10 videos, ordenado inversamente pela data da partilhada
+
+[autor:'Pedro Martins', timestamp_upload:'2023-11-23T18:45:00.000Z', video_id:740f645d-be72-4409-9bf9-cd799fa960f7, descricao:'Estratégias avançadas de xadrez', nome_video:'Domínio do Xadrez', tags:{'estratégia','jogos','xadrez'}]
+------------------------------------------------------------
+
+[autor:'Ricardo Gomes', timestamp_upload:'2023-11-21T09:30:00.000Z', video_id:3fe1670a-b6da-48b6-9ab4-6fe2f9bd14dc, descricao:'Tendências recentes em tecnologia e inovação', nome_video:'Tendências Tecnológicas', tags:{'inovação','notícias','tecnologia'}]
+------------------------------------------------------------
+
+[autor:'Carlos Pereira', timestamp_upload:'2023-11-25T15:30:00.000Z', video_id:c73df2c5-80bb-4df3-875d-50d38e0b26c1, descricao:'Rotinas de treino em casa', nome_video:'Fitness em Casa', tags:{'exercício','fitness','saúde'}]
+------------------------------------------------------------
+
+[autor:'João Silva', timestamp_upload:'2023-11-20T14:15:00.000Z', video_id:217162d9-dce6-48d2-bc1c-2cbc2451d7e9, descricao:'Explorando a floresta Amazônica', nome_video:'Aventuras na Amazônia', tags:{'aventura','natureza','viagem'}]
+------------------------------------------------------------
+
+[autor:'Sofia Ribeiro', timestamp_upload:'2023-11-22T13:00:00.000Z', video_id:3d21bb2d-6d26-4ea5-818a-aab22be912e7, descricao:'Descobrindo a culinária japonesa', nome_video:'Arte Culinária Japonesa', tags:{'Japão','cozinha','cultura'}]
+------------------------------------------------------------
+
+[autor:'António Sousa', timestamp_upload:'2023-11-18T11:00:00.000Z', video_id:0770f589-00bc-490c-8301-77c019f1f3c2, descricao:'O intrigante mundo da física quântica', nome_video:'Mistérios Quânticos', tags:{'ciência','educação','física'}]
+------------------------------------------------------------
+
+[autor:'Ana Torres', timestamp_upload:'2023-11-27T10:00:00.000Z', video_id:912135d5-04ac-4b6c-a8a0-8de70563af59, descricao:'Explorando paisagens de Portugal', nome_video:'Aventuras em Portugal', tags:{'Portugal','natureza','viagem'}]
+------------------------------------------------------------
+
+[autor:'Maria Oliveira', timestamp_upload:'2023-11-19T16:00:00.000Z', video_id:686f374e-cfc3-40e6-8301-94a5b571ed7b, descricao:'Receitas veganas rápidas e saudáveis', nome_video:'Delícias Veganas', tags:{'cozinha','saúde','vegano'}]
+------------------------------------------------------------
+
+[autor:'Clara Machado', timestamp_upload:'2023-11-17T12:00:00.000Z', video_id:7285625d-4f4f-4c50-99a8-535831045eb2, descricao:'Dicas de jardinagem para iniciantes', nome_video:'Jardinagem 101', tags:{'hobbies','jardinagem','natureza'}]
+------------------------------------------------------------
+
+[autor:'Luísa Fernandes', timestamp_upload:'2023-11-24T20:00:00.000Z', video_id:7b87a6ed-b2cc-4829-9f70-5066de8f60f4, descricao:'Introdução à composição musical clássica', nome_video:'Composições Clássicas', tags:{'clássica','educação','música'}]
+------------------------------------------------------------

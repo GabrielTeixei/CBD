@@ -1,0 +1,4 @@
+mvn compile
+mvn clean install
+mvn package
+mvn exec:java -Dexec.mainClass="com.mycompany.app.Forum

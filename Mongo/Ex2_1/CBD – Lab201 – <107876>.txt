@@ -1,0 +1,61 @@
+test> show dbs
+admin    48.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+test> use admin
+switched to db admin
+admin> show dbs
+admin    48.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+admin> use config
+switched to db config
+config> show dbs
+admin    48.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+config> use local
+switched to db local
+local> show dbs
+admin    48.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+local> use teste
+switched to db teste
+teste> show dbs
+admin    48.00 KiB
+config  108.00 KiB
+local    40.00 KiB
+teste> db.createCollection("mycollection")
+{ ok: 1 }
+teste> show collections
+mycollection
+teste> db.mycollection.drop
+[Function: drop] AsyncFunction {
+  apiVersions: [ 1, Infinity ],
+  returnsPromise: true,
+  serverVersions: [ '0.0.0', '999.999.999' ],
+  topologies: [ 'ReplSet', 'Sharded', 'LoadBalanced', 'Standalone' ],
+  returnType: { type: 'unknown', attributes: {} },
+  deprecated: false,
+  platforms: [ 'Compass', 'Browser', 'CLI' ],
+  isDirectShellCommand: false,
+  acceptsRawInput: false,
+  shellCommandCompleter: undefined,
+  help: [Function (anonymous)] Help
+}
+teste> show 
+show databases               show dbs                     show collections
+show tables                  show profile                 show users
+show roles                   show log                     show logs
+show startupWarnings         show automationNotices       show nonGenuineMongoDBCheck
+
+teste> show collections
+mycollection
+teste> db.mycollection.drop()
+true
+teste> show collections
+
+teste> 
+
+

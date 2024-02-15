@@ -1,0 +1,83 @@
+
+cqlsh
+
+CREATE KEYSPACE videos
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 3};
+
+USE videos; 
+select * from data3;
+cqlsh:videos> CREATE TABLE videos2 (
+   video_id UUID PRIMARY KEY,
+   autor text,
+   nome_do_video text,
+   descricao text,
+   etiquetas set<text>,
+   selo_temporal timestamp,
+   url text,
+   categoria text
+);
+cqlsh:videos> SELECT * FROM videos2;
+
+ video_id | autor | categoria | descricao | etiquetas | nome_do_video | selo_temporal | url
+----------+-------+-----------+-----------+-----------+---------------+---------------+-----
+
+(0 rows)
+cqlsh:videos> INSERT INTO videos (video_id, autor, nome_do_video, descricao, etiquetas, selo_temporal, url, categoria)
+VALUES (
+   uuid(),
+   'João Silva',
+   'Viagem à Praia',
+   'Vlog de uma viagem incrível à praia com amigos.',
+   {'viagem', 'praia', 'diversão'},
+   toTimestamp(now()),
+   'https://www.example.com/viagem-a-praia',
+   'Viagens'
+);
+(0 rows)
+cqlsh:videos> INSERT INTO videos2 (video_id, autor, nome_do_video, descricao, etiquetas, selo_temporal, url, categoria) VALUES (    uuid(),    'João Silva',    'Viagem à Praia',    'Vlog de uma viagem incrível à praia com amigos.',    {'viagem', 'praia', 'diversão'},    toTimestamp(now()),    'https://www.example.com/viagem-a-praia',    'Viagens' );
+cqlsh:videos> SELECT * FROM videos2;
+
+ video_id                             | autor      | categoria | descricao                                       | etiquetas                       | nome_do_video  | selo_temporal                   | url
+--------------------------------------+------------+-----------+-------------------------------------------------+---------------------------------+----------------+---------------------------------+----------------------------------------
+ 4bf090dc-8ad6-4a59-8d7a-146015672783 | João Silva |   Viagens | Vlog de uma viagem incrível à praia com amigos. | {'diversão', 'praia', 'viagem'} | Viagem à Praia | 2023-11-09 12:19:17.732000+0000 | https://www.example.com/viagem-a-praia
+
+(1 rows)
+cqlsh:videos> SELECT * FROM videos;
+
+ video_id                             | autor          | descricao          | nome          | selo_temporal
+--------------------------------------+----------------+--------------------+---------------+---------------------------------
+ 08d75267-e5ea-49b5-b729-5b6198ae96d9 |             eu |               MEDO |          FNAF | 2023-11-09 12:16:57.450000+0000
+ 2f3ea0ab-2460-4646-889b-b352765db570 | Autor do Vídeo | Descrição do Vídeo | Nome do Vídeo | 2023-11-09 12:15:45.994000+0000
+
+DROP TABLE videos;
+
+
+ CREATE KEYSPACE meukeyspace
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+cqlsh:tutorialspoint> 
+cqlsh:tutorialspoint> CREATE TABLE emp(
+   emp_id int PRIMARY KEY,
+   emp_name text,
+   emp_city text,
+   emp_sal varint,
+   emp_phone varint
+);
+cqlsh:tutorialspoint> 
+cqlsh:tutorialspoint> SELECT * FROM emp;
+
+ emp_id | emp_city | emp_name | emp_phone | emp_sal
+--------+----------+----------+-----------+---------
+
+(0 rows)
+cqlsh:tutorialspoint> ALTER TABLE emp ADD emp_email text;
+cqlsh:tutorialspoint> ALTER TABLE emp DROP emp_email;
+cqlsh:tutorialspoint> SELECT * FROM emp;
+
+ emp_id | emp_city | emp_name | emp_phone | emp_sal
+--------+----------+----------+-----------+---------
+(0 rows)
+cqlsh:tutorialspoint> DROP TABLE emp;
+cqlsh:tutorialspoint> INSERT INTO emp (emp_id, emp_name, emp_city, emp_phone, emp_sal) VALUES (1, 'ram', 'Hyderabad', 9848022338, 50000);
+
+

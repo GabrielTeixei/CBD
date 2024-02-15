@@ -1,0 +1,100 @@
+GET hella
+get 
+KEYS *
+DEL KEYS *
+KEYS *
+FLUSHALL 
+KEYS *
+quit 
+SET nome "Gabriel"
+SET nome_1 "Ana"
+get nome
+get nome_1
+PING
+PING "OLAAA"
+LPUSH ola 1 
+LRANGE ola
+BLPOP aaa 10
+ainda
+SAVE
+SET chave "java" 
+EXPIRE chave 20
+TTL chave
+PERSIST chave
+GETchave
+GET chave
+PERSIST chave
+GET chave
+TTL chave
+GET chave
+RPUS mylist "1" "3" "a" "b" "c"
+LPOP key [5]
+LPOP key "ola"
+LPOP key 
+fgkajnfgknsj afngksbjg afjkngçfl
+quit
+SET ola 1
+get ola
+aa
+clear
+quit
+SET ANA 
+SET ANA
+SET ana 1
+get ana
+PING
+SET mykey 1021
+GET mykey 
+SET chaveParaApagar 1234
+get chaveParaApagar
+DEL chaveParaApagar
+get chaveParaApagar
+LPUSH test redis 
+LPUSH test pyhton 
+LPUSH test Hello
+LRANGE test 0 5
+LRANGE test 2 5
+LRANGE test 2 2
+LRANGE test -1 2
+LRANGE test 1 -4
+BLMPOP ola 5
+BLMPOP 10 4 teste-1
+LINDEX test 2
+LLEN test
+LPOP test 2
+LLEN test
+LRANGE test 0 5
+MULTI
+SET t ola
+get t
+INCR visitors
+EXEC
+SET chave1 1
+SET chave2 2
+HSET chave1 nome eu
+HSET user:1 nome João
+redis-cli < CBD-12-batch.txt
+ < CBD-12-batch.txt
+ls
+SET chave1 valor1
+SET chave2 valor2
+HSET hash1 campo1 valor1
+HSET hash1 campo2 valor2
+redis-cli < CBD-12-batch.txt
+quit
+ CBD-12-batch.txt
+quit
+nomes.txt |redis-cli
+cat nomes.txt |redis-cli
+cat nomes.txt | redis-cli
+cat nomes.txt 
+sudo cat npmes.txt | redis-cli --pipe
+sudo cat nomes.txt | redis-cli --pipe
+cat nomes.txt | redis-cli --pipe
+ls
+clear
+cat nomes
+nomes
+clear
+cat nomes.txt | redis-cli
+cat CBD-12-batch.txt | redis-cli

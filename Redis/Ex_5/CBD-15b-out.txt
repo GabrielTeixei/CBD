@@ -1,0 +1,22 @@
+Digite seu nome de usuário: melo
+Digite o nome do produto (ou 'sair' para encerrar): melao
+Digite a quantidade desejada: 1
+Pedido realizado com sucesso! > melo -> melao x 1
+Lista de produtos:
+Lista de pedidos para o usuário melo:
+melao:1
+Digite o nome do produto (ou 'sair' para encerrar): pera
+Digite a quantidade desejada: 3
+Pedido realizado com sucesso! > melo -> pera x 3
+Lista de produtos:
+Lista de pedidos para o usuário melo:
+melao:1
+pera:3
+Digite o nome do produto (ou 'sair' para encerrar): maça
+Digite a quantidade desejada: 4
+Limite máximo de pedidos excedido para este período
+Lista de produtos:
+Lista de pedidos para o usuário melo:
+melao:1
+pera:3
+Digite o nome do produto (ou 'sair' para encerrar): sair

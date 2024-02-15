@@ -1,0 +1,16 @@
+SET name_0 gabriel 
+SET name_1 Ana 
+SET name_2 bela 
+SET name_3 joana  
+SET name_4 rita 
+SET name_5 rodrigo 
+SET name_6 tomas 
+SET name_7 to
+SET name_8 jose
+SET name_9 matilde
+SET name_10 Hugo
+SET name_11 Joaquim 
+SET name_12 vasco
+SET name_12 pedro
+
+

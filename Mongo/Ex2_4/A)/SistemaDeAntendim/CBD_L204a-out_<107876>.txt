@@ -1,0 +1,51 @@
+tendimento> db.pedidos.find()
+[
+  {
+    _id: ObjectId("652d17a051f7e0043592b43d"),
+    username: 'user1',
+    product: 'produto1',
+    timestamp: Long("1697453984201")
+  },
+  {
+    _id: ObjectId("652d17a051f7e0043592b43e"),
+    username: 'user1',
+    product: 'produto2',
+    timestamp: Long("1697453984227")
+  },
+  {
+    _id: ObjectId("652d17a051f7e0043592b43f"),
+    username: 'user2',
+    product: 'produto3',
+    timestamp: Long("1697453984229")
+  },
+  {
+    _id: ObjectId("652d17a051f7e0043592b440"),
+    username: 'user1',
+    product: 'produto4',
+    timestamp: Long("1697453984231")
+  },
+  {
+    _id: ObjectId("652d23c5ef4cfa3401825ae4"),
+    username: 'Gabriel',
+    product: 'Maçã',
+    timestamp: Long("1697457093255")
+  },
+  {
+    _id: ObjectId("652d23c5ef4cfa3401825ae5"),
+    username: 'Gabriel',
+    product: 'Pera',
+    timestamp: Long("1697457093268")
+  },
+  {
+    _id: ObjectId("652d23c5ef4cfa3401825ae6"),
+    username: 'Ana',
+    product: 'Banana',
+    timestamp: Long("1697457093270")
+  },
+  {
+    _id: ObjectId("652d23c5ef4cfa3401825ae7"),
+    username: 'Bia',
+    product: 'Pessego',
+    timestamp: Long("1697457093271")
+  },
+]

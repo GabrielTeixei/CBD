@@ -1,0 +1,4 @@
+db.phones.count()
+DeprecationWarning: Collection.count() is deprecated. Use countDocuments or estimatedDocumentCount.
+200000
+

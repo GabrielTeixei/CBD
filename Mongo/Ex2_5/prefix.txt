@@ -1,0 +1,8 @@
+[
+  { _id: 234, sumEach: 33017 },
+  { _id: 22, sumEach: 33534 },
+  { _id: 232, sumEach: 33455 },
+  { _id: 21, sumEach: 33263 },
+  { _id: 233, sumEach: 33265 },
+  { _id: 231, sumEach: 33473 }
+]

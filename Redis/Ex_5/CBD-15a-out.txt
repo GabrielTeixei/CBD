@@ -1,0 +1,74 @@
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+1
+Nomes de utilizadore: []
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+3
+Digite o nome do utilizadore: ana
+Digite o nome do produto: mel
+Pedido atendido com sucesso!
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+3
+Digite o nome do utilizadore: ana
+Digite o nome do produto: bolo
+Pedido atendido com sucesso!
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+3
+Digite o nome do utilizadore: ana
+Digite o nome do produto: faca
+Limite de pedidos excedido para o utilizadore ou ocorreu um erro.
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+1
+Nomes de utilizadore: [15, ana]
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+2
+Digite o nome do utilizadore: ana
+Produtos do utilizadore: [mel, bolo]
+----------------------------------
+Escolha uma opção:
+(1) Ver nomes de utilizadore
+(2) Ver produtos selecionados
+(3) Atender pedido de Atendimento
+(4) Sair
+----------------------------------
+4
+Sair.
+
+"""
+Foi feito com Max de produto igual a 2 e tempo de 15s.
+"""

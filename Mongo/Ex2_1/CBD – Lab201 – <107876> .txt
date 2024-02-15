@@ -1,0 +1,130 @@
+// NMEC: 12345
+// 1. Liste todos os documentos da coleção.
+db.restaurants.find()
+// 3772
+// 2. Apresente os campos restaurant_id, nome, localidade e gastronomia para
+//todos os documentos da coleção
+// cbd> db.restaurants.find({},{restaurant_id:1 ,nome:1 ,localidade:1,gastronomia:1 ,_id :0})
+// [
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Hamburgers',
+//     nome: "Wendy'S",
+//     restaurant_id: '30112340'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'American',
+//     nome: 'Riviera Caterer',
+//     restaurant_id: '40356018'
+//   },
+//   {
+//     localidade: 'Manhattan',
+//     gastronomia: 'Irish',
+//     nome: 'Dj Reynolds Pub And Restaurant',
+//     restaurant_id: '30191841'
+//   },
+//   {
+//     localidade: 'Bronx',
+//     gastronomia: 'American',
+//     nome: 'Wild Asia',
+//     restaurant_id: '40357217'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'American',
+//     nome: 'Regina Caterers',
+//     restaurant_id: '40356649'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Ice Cream, Gelato, Yogurt, Ices',
+//     nome: 'Taste The Tropics Ice Cream',
+//     restaurant_id: '40356731'
+//   },
+//   {
+//     localidade: 'Staten Island',
+//     gastronomia: 'Jewish/Kosher',
+//     nome: 'Kosher Island',
+//     restaurant_id: '40356442'
+//   },
+//   {
+//     localidade: 'Queens',
+//     gastronomia: 'American',
+//     nome: 'Brunos On The Boulevard',
+//     restaurant_id: '40356151'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'American',
+//     nome: 'C & C Catering Service',
+//     restaurant_id: '40357437'
+//   },
+//   {
+//     localidade: 'Manhattan',
+//     gastronomia: 'American',
+//     nome: '1 East 66Th Street Kitchen',
+//     restaurant_id: '40359480'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Chinese',
+//     nome: 'May May Kitchen',
+//     restaurant_id: '40358429'
+//   },
+//   {
+//     localidade: 'Bronx',
+//     gastronomia: 'Bakery',
+//     nome: 'Morris Park Bake Shop',
+//     restaurant_id: '30075445'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Jewish/Kosher',
+//     nome: 'Seuda Foods',
+//     restaurant_id: '40360045'
+//   },
+//   {
+//     localidade: 'Queens',
+//     gastronomia: 'Ice Cream, Gelato, Yogurt, Ices',
+//     nome: 'Carvel Ice Cream',
+//     restaurant_id: '40361322'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Delicatessen',
+//     nome: "Wilken'S Fine Food",
+//     restaurant_id: '40356483'
+//   },
+//   {
+//     localidade: 'Queens',
+//     gastronomia: 'Jewish/Kosher',
+//     nome: 'Tov Kosher Kitchen',
+//     restaurant_id: '40356068'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Delicatessen',
+//     nome: 'Nordic Delicacies',
+//     restaurant_id: '40361390'
+//   },
+//   {
+//     localidade: 'Queens',
+//     gastronomia: 'Delicatessen',
+//     nome: "Steve Chu'S Deli & Grocery",
+//     restaurant_id: '40361998'
+//   },
+//   {
+//     localidade: 'Manhattan',
+//     gastronomia: 'Chicken',
+//     nome: "Harriet'S Kitchen",
+//     restaurant_id: '40362098'
+//   },
+//   {
+//     localidade: 'Brooklyn',
+//     gastronomia: 'Ice Cream, Gelato, Yogurt, Ices',
+//     nome: 'Carvel Ice Cream',
+//     restaurant_id: '40360076'
+//   }
+// ]
+
